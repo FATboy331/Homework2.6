@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/photo_2022_07_24_11_35_33"
+    tools:context=".MainActivity">
+
+
+   <TextView
+       android:id="@+id/textInput"
+       android:layout_marginBottom="500dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:textSize="16dp"
+       android:textColor="@color/white"
+       android:textStyle="bold"
+       android:text="Вход"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_marginTop="170dp"
+        app:layout_constraintTop_toBottomOf="@id/textInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Добро пожаловать!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textRegistration"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@id/textWelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:text="       Выполните вход\n или зарегистрируйтесь."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+ <TextView
+     android:id="@+id/textForgotYourPassword"
+     android:layout_marginBottom="70dp"
+     android:layout_marginStart="70dp"
+     android:layout_marginTop="268dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+
+     android:textColor="@color/white"
+     android:textStyle="bold"
+     android:text="Забыл пароль?"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"/>
+
+
+
+    <EditText
+android:id="@+id/editMail"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:background="@drawable/button"
+        android:hint="    Введите вашу почту"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@color/gray"
+        tools:ignore="MissingConstraints"
+        android:textSize="14dp"
+        />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintTop_toBottomOf="@+id/editMail"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:background="@drawable/button"
+        android:hint="    Введите пароль"
+        android:inputType="textPassword"
+        android:textColorHint="@color/gray"
+        tools:ignore="MissingConstraints"
+        android:textSize="14dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+android:id="@+id/buttonInput"
+        android:text="Войти"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+    app:backgroundTint="@color/gray"
+        tools:ignore="MissingConstraints"
+        android:gravity="center"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
