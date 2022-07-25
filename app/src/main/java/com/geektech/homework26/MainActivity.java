@@ -82,7 +82,7 @@ editPassword.addTextChangedListener(new TextWatcher() {
         buttonInput.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(editMail.getText().toString().equals("1") && editPassword.getText().toString().equals("1")){
+                if(editMail.getText().toString().equals("admin") && editPassword.getText().toString().equals("admin")){
                     textInput.setVisibility(View.GONE);
                     textRegistration.setVisibility(View.GONE);
                     textForgotYourPassword.setVisibility(View.GONE);
